@@ -4,25 +4,18 @@ A minimal LaTeX class (`kmou_thesis.cls`) for writing theses at  **Korea Maritim
 This repository provides a structured template including cover pages, table of contents, abstract, main chapters, acknowledgments, and references.
 
 ## 📂 Repository Structure
+```
 kmou_thesis_latex_class/
-
 ├── figs/ # Example figures
-
 │ └── tsne_2d.pdf
-
 ├── elsarticle-harv.bst # Elsevier Harvard-style reference format
-
 ├── elsarticle-num.bst # Elsevier numbered reference format
-
 ├── kmou_thesis.cls # Thesis class file
-
 ├── README.md # Project introduction
-
 ├── refs.bib # Sample bibliography file
-
 ├── sample_thesis.pdf # Compiled example thesis
-
 └── sample_thesis.tex # Example thesis source file
+```
 
 ## ✨ Features
 > Note: The Korean option is currently being developed and will be added soon.
