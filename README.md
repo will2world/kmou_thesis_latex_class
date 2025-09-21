@@ -4,8 +4,6 @@ A minimal LaTeX class (`kmou_thesis.cls`) for writing theses at
 **Korea Maritime & Ocean University (KMOU)**.  
 This repository provides a structured template including cover pages, table of contents, abstract, main chapters, acknowledgments, and references.
 
----
-
 ## 📂 Repository Structure
 kmou_thesis_latex_class/
 ├── figs/ # Example figures
@@ -17,8 +15,6 @@ kmou_thesis_latex_class/
 ├── refs.bib # Sample bibliography file
 ├── sample_thesis.pdf # Compiled example thesis
 └── sample_thesis.tex # Example thesis source file
-
----
 
 ## ✨ Features
 
@@ -35,7 +31,6 @@ kmou_thesis_latex_class/
   - `cleveref` for cross-references
   - Example bibliography entries in `refs.bib`
 
----
 
 ## 📖 Bibliography Styles
 
@@ -53,8 +48,7 @@ Default setting in `sample_thesis.tex`:
 \bibliography{refs}
 ```
 
----
 
 ## 📝 License
-- kmou_thesis.cls and sample_thesis.tex are released under the MIT License.
-- elsarticle-harv.bst and elsarticle-num.bst are provided by Elsevier (see [CTAN link](https://ctan.org/pkg/elsarticle)).
+- `kmou_thesis.cls` and `sample_thesis.tex` are released under the MIT License.
+- `elsarticle-harv.bst` and `elsarticle-num.bst` are provided by Elsevier (see [CTAN link](https://ctan.org/pkg/elsarticle)).
