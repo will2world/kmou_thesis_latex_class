@@ -1,6 +1,60 @@
-# kmou_thesis_latex_class
-- Unofficial KMOU's LaTeX thesis class
-- Creator: Junho Son
-- Date: 21st September, 2025
--  학교 규정 상 한글 버전 규정은 존재하나, 영문 버전에 대한 규정은 명시되어있지 않고 오직 doc/hwp 양식 파일로만 제공되고 있음. 따라서, 제공된 doc 양식을 참고로하여 간격 등을 조절하였으며 일부 한글 규정을 참고하여 폰트 크기를 결정함.
--  현재는 B5를 기반 용지로 설정하였으나, 필요시 A4로 수정하고 그에 따라 geometry 설정 필요.
+# KMOU Thesis LaTeX Class
+
+A minimal LaTeX class (`kmou_thesis.cls`) for writing theses at  
+**Korea Maritime & Ocean University (KMOU)**.  
+This repository provides a structured template including cover pages, table of contents, abstract, main chapters, acknowledgments, and references.
+
+---
+
+## 📂 Repository Structure
+kmou_thesis_latex_class/
+├── figs/ # Example figures
+│ └── tsne_2d.pdf
+├── elsarticle-harv.bst # Elsevier Harvard-style reference format
+├── elsarticle-num.bst # Elsevier numbered reference format
+├── kmou_thesis.cls # Thesis class file
+├── README.md # Project introduction
+├── refs.bib # Sample bibliography file
+├── sample_thesis.pdf # Compiled example thesis
+└── sample_thesis.tex # Example thesis source file
+
+---
+
+## ✨ Features
+
+- Custom thesis class `kmou_thesis.cls`  
+- Sample `.tex` file demonstrating:
+  - Cover and approval pages
+  - Table of contents, list of tables, list of figures
+  - Abbreviations section
+  - Abstract
+  - Chapters with equations, figures, and tables
+  - Acknowledgments and bibliography
+- Preconfigured with:
+  - `natbib` for citations
+  - `cleveref` for cross-references
+  - Example bibliography entries in `refs.bib`
+
+---
+
+## 📖 Bibliography Styles
+
+This template includes two Elsevier `.bst` files:
+
+- `elsarticle-harv.bst` — Harvard author-year style  
+- `elsarticle-num.bst` — Numbered style  
+
+These `.bst` files are officially distributed by Elsevier.  
+For the latest version, please refer to the [Elsevier LaTeX package on CTAN](https://ctan.org/pkg/elsarticle).
+
+Default setting in `sample_thesis.tex`:
+```latex
+\bibliographystyle{cas-model2-names}
+\bibliography{refs}
+```
+
+---
+
+## 📝 License
+- kmou_thesis.cls and sample_thesis.tex are released under the MIT License.
+- elsarticle-harv.bst and elsarticle-num.bst are provided by Elsevier (see [CTAN link](https://ctan.org/pkg/elsarticle)).
