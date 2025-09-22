@@ -1,12 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Unofficial KMOU's latex thesis class
-% Creater: Junho Son
+% Creater: Will Son
 % Date: 21st September, 2025
 % Github: https://github.com/will2world/kmou_thesis_latex_class
 % Comment:
 % - 현재는 영문버전 논문만 지원합니다.
 % - 현재 작성규정에는 영문 버전에 대한 설명이 미흡하여,
-%	영문 양식을 참고하여 제작하였음.
+%	영문 양식을 기반으로 하고, 한글 양식을 일부 참고하여
+%	작성하였습니다.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
@@ -401,6 +402,7 @@ of the Requirements for the \@degree \par}
         \pagenumbering{roman}% 
 	\providecommand\phantomsection{}%
 	\phantomsection
+	\pdfbookmark[1]{\contentsname}{toc} % TOC에서는 생략되더라도, pdf 상 bookmark에는 보이도록 추가.
 	\chapter*{\contentsname}% ← 표준 Chapter 타이틀 사용
 	\@starttoc{toc}%
 	}{}
