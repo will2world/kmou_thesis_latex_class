@@ -10,6 +10,7 @@ kmou_thesis_latex_class/
 │ └── tsne_2d.pdf
 ├── elsarticle-harv.bst # Elsevier Harvard-style reference format
 ├── elsarticle-num.bst # Elsevier numbered reference format
+├── cas-model2-names # Elsevier name-year styled reference format
 ├── kmou_thesis.cls # Thesis class file
 ├── README.md # Project introduction
 ├── refs.bib # Sample bibliography file
@@ -41,6 +42,7 @@ This template includes two Elsevier `.bst` files:
 
 - `elsarticle-harv.bst` — Harvard author-year style  
 - `elsarticle-num.bst` — Numbered style  
+- `cas-model2-names.bst` — Name-year style  
 
 These `.bst` files are officially distributed by Elsevier.  
 For the latest version, please refer to the [Elsevier LaTeX package on CTAN](https://ctan.org/pkg/elsarticle).
@@ -54,4 +56,4 @@ Default setting in `sample_thesis.tex`:
 
 ## 📝 License
 - `kmou_thesis.cls` and `sample_thesis.tex` are released under the MIT License.
-- `elsarticle-harv.bst` and `elsarticle-num.bst` are provided by Elsevier (see [CTAN link](https://ctan.org/pkg/elsarticle)).
+- `elsarticle-harv.bst`, `elsarticle-num.bst`, and `cas-model2-names.bst` are provided by Elsevier (see [CTAN link](https://ctan.org/pkg/elsarticle)).
