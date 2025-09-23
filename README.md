@@ -20,6 +20,7 @@ kmou_thesis_latex_class/
 
 ## ✨ Features
 > Note: The Korean option is currently being developed and will be added soon.
+
 > Note: Now only B5 option is supported (default). A4 option is currently being developed and will be added soon.
 
 - Custom thesis class `kmou_thesis.cls`  
