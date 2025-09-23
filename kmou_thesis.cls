@@ -31,6 +31,11 @@
 % 기본 패키지
 \RequirePackage[T1]{fontenc} % pdflatex 기본
 \RequirePackage{newtxtext,newtxmath} % times new roman font
+\renewcommand{\ttdefault}{\rmdefault} % tt font 통일
+
+\RequirePackage[hangul]{kotex}    % UTF-8 한글
+\SetHangulFonts{nanummj}{nanumgt}{nanummj} % 기본 글꼴을 나눔명조로, sanserif 글꼴을 나눔고딕으로 설정.
+
 \RequirePackage{geometry}
 \geometry{
   paper=b5paper,
@@ -54,8 +59,6 @@
 \RequirePackage{setspace}
 \AtBeginDocument{\setstretch{1.5} \pagestyle{plain}}  % 전역 1.5배
 
-% 문서 전체를 kotex 사용 환경으로 설정
-\RequirePackage[hangul]{kotex}    % UTF-8 한글, 기본 글꼴은 나눔명조
 
 % 챕터 시작마다 figure와 table 번호 초기화
 \counterwithin{figure}{chapter}
@@ -100,7 +103,7 @@
 
 % --- 한글 제목 문자열 ---
 \if@Korean
-  \renewcommand\contentsname{\hfill 목차 \hfill}
+  \renewcommand\contentsname{목차}
   \renewcommand\listfigurename{그림 목록}
   \renewcommand\listtablename{표 목록}
   \newcommand\listofabbreviationsname{약어 목록}
@@ -109,7 +112,7 @@
   \newcommand\kabstractname{초록}
   \newcommand\eabstractname{Abstract}
 \else
-  \renewcommand\contentsname{\hfill Contents \hfill}
+  \renewcommand\contentsname{Contents}
   \renewcommand\listfigurename{List of Figures}
   \renewcommand\listtablename{List of Tables}
   \newcommand\listofabbreviationsname{List of Abbreviations}
@@ -403,7 +406,7 @@ of the Requirements for the \@degree \par}
 	\providecommand\phantomsection{}%
 	\phantomsection
 	\pdfbookmark[1]{\contentsname}{toc} % TOC에서는 생략되더라도, pdf 상 bookmark에는 보이도록 추가.
-	\chapter*{\contentsname}% ← 표준 Chapter 타이틀 사용
+	\chapter*{\hfill \contentsname \hfill}% ← 표준 Chapter 타이틀 사용
 	\@starttoc{toc}%
 	}{}
 \newcommand{\makecontents}{%
